@@ -1,0 +1,75 @@
+
+i{
+	
+	display: inline-block;}
+/*向左浮动*/
+.goodslist>li,#userViewed ul li,#list li,#shaixuantiaojian strong,#midleft,#midright,#midright dt,#shaixuantiaojian ul,#shaixuantiaojian li,#midright dd{float: left;}
+/*字体颜色  红色*/
+.red{color: red;}
+.del{
+	color: #999;
+	text-decoration: line-through;
+}
+.boldred{
+	font-size: 22px;
+
+	margin-right: 10px;
+	font-weight: bold;
+	color: red;
+}
+/*向右浮动*/
+.right{float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,217 @@
+body,html{width: 100%;height: 100%;margin: 0 auto;}
+#biggest{ width:1190px;margin:0 auto; font-family: "微软雅黑";font-size: 12px;}
+.erweima dt,#APP #apperweima{background: url(../img/common_sprite.png)  no-repeat;}
+.Ared{ color: red;}
+
+i{display: inline-block;}
+.miss{display: none;}
+
+
+#bottel,#botfour ul,#bot li,.goods,.floorRightButton li,.goods p,.minilubotu,.minilubotu li,.floorRight,.floorLeft dd li,.floorLeft,#midsec li,#topright dd i,#topright dd span,#midtopNav li,#midNav,#bigmenu
+,#illness,.lunbotu,#onlineconsult li,#server li
+{float: left;}
+
+
+#topFirst{background-color: #f8f8f8; height: 36px; position: relative;}
+#topFirstAddress{
+	float: left;
+	padding: 12px 0;
+	/*background: #FFF; 把这个加入到时间中*/ 
+	width: 100px;}
+#topFirstAddress .goodsAddress{
+
+	position: relative;
+	text-align: center;
+	height: 12px;
+	line-height: 12px;
+	background: url(../img/common_sprite.png)right 0  no-repeat;
+	background-position: right 8px; 
+	padding:0 15px 0 5px;
+	
+	}
+#goodsAddress{
+	position: absolute;
+	top: 36px;
+	left: -1px;
+	width: 280px;
+	display:block;
+	border: 1px solid #e5e5e5;
+	background: #FFF;
+	border-top: none;
+	padding: 10px;
+	color: #333;
+	font-weight: 400;
+	display: none;
+	}
+#goodsAddress li{height: 22px;line-height: 22px;}
+#goodsAddress li em{padding: 0 10px 0 0;}
+
+#goodsAddress li a{padding: 0 5px 0 0;}	
+
+#topFirst>ul{
+	width: 480px;
+	height: 36px;
+	float: right;
+	}
+#topFirst>ul>li{
+	margin-top: 6px;
+	line-height: 24px;
+	padding: 0 10px;	
+	height: 30px;
+	
+	float: left;
+	}
+#topFirst>ul>li a{
+	color: #333333;
+	}
+#topFirst>ul>li .Ared{ 
+	padding-right: 5px;
+	color: red;
+	}
+
+#topFirst>ul .xialakuang{
+	
+	padding: 0 17px 5px 0;
+	background: url(../img/common_sprite.png)right 0px  no-repeat;
+	background-position: right 8px; 
+	margin-left:-1px ;
+}
+#topFirst>ul .xialakuang1{
+	
+	border: 1px solid #e5e5e5;
+	background: url(../img/common_sprite.png)right -29px  no-repeat;
+	background-position: right -18px; 
+	background-color: #fff;
+	}
+
+#topFirst>ul>li .Atanchuang{
+	
+	width: 73px;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	display:none;
+	margin-left: -1px;
+	
+}
+#topFirst>ul .telnum{
+	color: #c7a774;
+	font-weight: 700;
+	overflow:hidden ;
+	padding-right:0;
+	margin-right:5px;
+}
+
+#topFirst>ul #phone{
+	position: relative;
+	padding: 0px;
+	width: 66px;
+	
+}
+.phonekuang{/*导航栏框子*/
+	border: 1px solid #e5e5e5;
+	border-bottom: none;
+	background-color: #fff;}
+#topFirst>ul #phone a{
+	display: inline-block;
+	vertical-align: middle;
+	height: 24px;line-height: 24px;}
+#phone em{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 0 5px;
+	width: 9px;
+	height: 23px;
+	background: url(../img/common_sprite.png)  no-repeat;
+	background-position: right -108px; 
+	display: inline-block;
+	
+	}
+#phone span{padding: 0 0 0 5px;}
+
+
+.erweima{
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	background-color: #fff;
+	position:absolute;
+	left: -97px;
+	top: 28px;
+	display: none;
+}
+.erweima dl{width: 207px;clear: both;}
+
+.erweima .a1 dt{
+	background-position: -88px -223px;
+	}	
+.erweima .a2 dt{
+	background-position: -1px -887px;
+}
+.erweima dt {
+	width: 85px;
+	height: 85px;
+	float: left;
+}
+.erweima dd{
+	width: 105px;
+	height: 85px;
+	float: left;
+}
+#phone .erweima dl a{color: #e72418; font-weight: 700;}
+
+
+#topThr{height: 113px;padding-bottom:24px;position: relative;}
+
+#logo{padding:0 120px 0 0;float: left;}
+#logo p{position: absolute;top:87px; left:1px}
+#logo p span{color: dodgerblue;font-weight: 600;padding: 0 10px;}
+
+#topmid{
+	padding: 34px 0;
+	float: left;
+}
+#topmid input{
+	width: 425px;
+	float: left;
+	height: 44px;
+	
+	border: solid 1px #c7a774;
+	font-size: 15px;
+	line-height: 44px;
+	padding:0 7px;
+	color: #666;
+}
+#topmid #searchbtn{
+	display: inline-block;
+	width: 82px;
+	height: 46px;
+	background: #FFFFFF;
+	border: solid 1px #c7a774;
+	}
+#topMidUl{
+	padding:10px 0;
+}
+#topMidUl li{float:left; font-size: 15px; padding:0 12px 0 0;}
+#topright{float: right;width:273px;height: 113px;}
+#topright dt,#topright dd{float: left;}
+#topright dd{position: relative;
+	margin-top: 34px;
+	width: 148px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #eeeeee;
+	background:#fafafa url(img/common_sprite.png)19px -311px no-repeat;
+}
+#topright dd em{
+	border-radius: 13px;width: 16px;text-align: center;
+	background: red;color: #FFFFFF;height: 16px;line-height: 16px;
+	position: absolute; top:3px;left: 43px;
+	}
+
+
+#topright dd span{
+	display: inline-block;
+	width: 44px;
+	padding: 0 0 0 65px;
+}
