@@ -24,6 +24,7 @@
 	background: url(img/common_sprite.png)no-repeat right 6px;
 }
  #shendian{
+ 	position: relative;
 	background-color:#19323a;
 	text-align: center;
 	width: 148px;
@@ -251,4 +252,68 @@
 
 
 
+#bigmenu{
+	display: none;
+	position: absolute;
+	top: 36px;
+	left: 0px;
+	width: 180px;}
+#bigmenu li{
+	
+	text-align: center;
+	width: 148px;
+	height: 40px;
+	background-color: #314349;}
+	
+#bigmenu .on{background: #FFFFFF;}
+#bigmenu .on span{color: #000;}
+#bigmenu #shendian{
+	background-color:#19323a;}
+#bigmenu span{
+	clear: both;color: #fff;
+	line-height: 36px;
+	vertical-align: middle;
+	}
+#bigmenu i{width: 23px;
+	height: 40px;
+	overflow: hidden;vertical-align: middle;
+	/*
+	
+	width: 23px;
+	height: 40px;
+	background: url(img/bigmenu.png) no-repeat;*/}
 
+
+#bigmenu .secmenu{
+			display: none;
+			width: 810px;
+			height: 400px;
+			position: absolute;
+			top: 0;
+			
+			left: 180px;
+			padding: 0 20px;
+			background-color: #fff ;
+}
+#bigmenu .secmenu li{
+	padding: 0;
+	height: 100px;
+	width: 252px;
+	background-color:#FFFFFF ;
+	color: #000000;
+}
+.thrmenu{
+	display: none;
+	clear: both;
+	float: left;
+	width: 252px;
+	height: 80px;
+}
+
+#bigmenu .thrmenu li{
+	float: left;
+	width: 70px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;}
