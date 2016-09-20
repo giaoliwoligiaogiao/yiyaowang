@@ -1,0 +1,157 @@
+i{display: inline-block;}
+.red{color: red;}
+ul li{float: left;}
+.right{float: right;}
+.mar6{margin-top: 6px;}
+.del{text-decoration: line-through;}
+body{color: #5E5E5E;}
+#midtopNav{
+	margin: 0 0 15px 0;
+	clear: both;
+	width:1190px;
+	height: 34px;
+	border-bottom: 2px  solid #19323a;
+	}
+#midtopNav li{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 34px;
+	padding:0 16px;
+}
+#haiwaigou i{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background: url(img/haitao_ico.gif)no-repeat;
+}
+.arrowDown{
+	width: 13px;
+	height: 10px;
+	background: url(img/common_sprite.png)no-repeat right 6px;
+}
+ #shendian{
+ 	position: relative;
+	background-color:#19323a;
+	text-align: center;
+	width: 148px;
+	height: 35px;background-color: #314349;}
+
+
+#bigmenu{
+	display: none;
+	position: absolute;
+	top: 36px;
+	left: 0px;
+	width: 180px;}
+#bigmenu li{
+	
+	text-align: center;
+	width: 148px;
+	height: 40px;
+	background-color: #314349;}
+	
+#bigmenu .on{background: #FFFFFF;}
+#bigmenu .on span{color: #000;}
+#bigmenu #shendian{
+	background-color:#19323a;}
+#bigmenu span{
+	clear: both;color: #fff;
+	line-height: 36px;
+	vertical-align: middle;
+	}
+#bigmenu i{width: 23px;
+	height: 40px;
+	overflow: hidden;vertical-align: middle;
+	/*
+	
+	width: 23px;
+	height: 40px;
+	background: url(img/bigmenu.png) no-repeat;*/}
+
+
+#bigmenu .secmenu{
+			display: none;
+			width: 810px;
+			height: 400px;
+			position: absolute;
+			top: 0;
+			
+			left: 180px;
+			padding: 0 20px;
+			background-color: #fff ;
+}
+#bigmenu .secmenu li{
+	padding: 0;
+	height: 100px;
+	width: 252px;
+	background-color:#FFFFFF ;
+	color: #000000;
+}
+.thrmenu{
+	display: none;
+	clear: both;
+	float: left;
+	width: 252px;
+	height: 80px;
+}
+
+#bigmenu .thrmenu li{
+	float: left;
+	width: 70px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;}
+
+#path{height: 20px;
+  	line-height: 20px;
+	margin: 0 0 10px 0;
+}
+#path i{
+	width:20px ;
+	height: 16px;
+	background: url(img/yw_home.png) 0 2px no-repeat;
+}
+
+
+
+.details{clear: both;}
+.midmid{float: left;}
+.midmid li{ 
+	float: none;}
+.medtitle{height: 33px;}
+.medtitle span{
+	margin: 0px 6px 0 0;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: center;
+	width: 39px;
+	height: 21px;
+	margin-bottom: 10px;
+	float: left;border: 1px solid #1E90FF;color: #1E90FF;
+}
+.medtitle h1{
+	padding-bottom: 10px;
+	font-size: 17px;
+	font-weight: 700;
+	width: 242px;
+}
+
+
+
+.bigprice{
+	margin: 6px 6px 0 6px;
+	color: #F00;
+	font-weight: 700;
+	font-size: 22px;
+	height: 22px;
+	line-height: 22px;
+}
+
+
+
+
+
+
+
+
