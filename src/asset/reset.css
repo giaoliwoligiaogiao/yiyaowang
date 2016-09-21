@@ -1,6 +1,6 @@
 
 i{
-	
+	vertical-align: middle;
 	display: inline-block;}
 /*向左浮动*/
 .goodslist>li,#userViewed ul li,#list li,#shaixuantiaojian strong,#midleft,#midright,#midright dt,#shaixuantiaojian ul,#shaixuantiaojian li,#midright dd{float: left;}

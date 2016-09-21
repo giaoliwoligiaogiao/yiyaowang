@@ -9,7 +9,7 @@
 
 /*right*/
 .right{
-	
+	z-index: 100;
 	width: 380px;height: 380px;
 	border: 1px solid #f00;
 	display: none;float: left;overflow: hidden;margin-left:50px;position: absolute;
@@ -21,7 +21,8 @@
 /*smallPic */
 .smallPic{width:298px;height:298px;overflow: hidden;position: relative;}
 .smallPic img{width: 298px;height: 298px;}
-.smallPic span{width: 141px;height: 141px;background:#FFFFFF; left:0px;top:0px; position:absolute; display:none; filter:alpha(opacity:20); opacity:0.2; }
+.smallPic span{
+	z-index:1000;width: 141px;height: 141px;background:#FFFFFF; left:0px;top:0px; position:absolute; display:none; filter:alpha(opacity:20); opacity:0.2; }
 
 /*list*/
 #list{margin-left: 10px;}

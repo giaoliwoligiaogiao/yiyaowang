@@ -32,8 +32,9 @@ $(function(){
 	//鼠标移动
 	$smallPic.mousemove(function(e){
 		
-		var x=e.clientX-$(this).offset().left-$span.outerWidth()/2;
-		var y=e.clientY-$(this).offset().top-$span.outerHeight()/2;
+		var x=e.pageX-$(this).offset().left-$span.outerWidth()/2;
+		var y=e.pageY-$(this).offset().top-$span.outerHeight()/2;
+		console.log(y)
 		if (x<0) {
 			x=0;
 		}
@@ -48,7 +49,7 @@ $(function(){
 			y=$smallPic.outerHeight()-$span.outerHeight();
 		}
 		$span.css({'left':x,'top':y})
-		console.log(x,y)
+		//console.log(x,y)
 		var percentX=x/($smallPic.outerWidth()-$span.outerWidth());
 		var percentY=y/($smallPic.outerHeight()-$span.outerHeight());
 		
@@ -57,7 +58,7 @@ $(function(){
 		if (bigy>$('.right img').outerHeight()-$right.outerHeight()) {
 			bigy=$('.right img').outerHeight()-$right.outerHeight();
 		}
-		console.log($('.right img').outerHeight()-$right.outerHeight());
+		//console.log($('.right img').outerHeight()-$right.outerHeight());
 		$('.right img').css({
 			'left':-percentX*($('.right img').outerWidth()-$right.outerWidth()),
 			'top':-bigy

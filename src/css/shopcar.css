@@ -1,0 +1,273 @@
+#topsec{
+	height: 100px;
+	padding: 20px 0;
+}
+#topsec p{
+	float: left;
+}
+#topsec ul{
+	margin-top: 35px;
+	float: right;
+}
+#topsec li{
+	color: #A5A5A5;
+	background: #F3F3F3;
+	float: left;
+	width: 190px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	
+}
+#topsec li i{
+	width: 32px;
+	height: 32px;
+	float: right;
+	
+	background: url(../img/followstep.png)no-repeat 0;
+	background-position:right top;
+}
+#topsec .dill{
+	color: #FFFFFF;
+	background-color: dodgerblue ;
+}
+#topsec .dill i{
+	width: 32px;
+	height: 32px;
+	background-position:right top;
+}
+#topthr{height: 40px;
+	color: #5E5E5E;
+}
+
+#topthr dt{
+	font-size: 18px;
+	float: left;
+	
+	padding: 10px 0;
+	
+}
+
+#topthr dd{
+	line-height: 20px;
+	float: right;
+	
+}
+#topthr dd a{
+	font-size: 12px;
+	float: right;
+	
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	background-color:#FF0000 ;
+	display: inline-block;
+	width:24px ;
+	text-align: center;
+	padding: 0 5px;
+}
+
+.bc{background-color: #F3F3F3;}
+.title{
+	
+	width: 100%;
+	clear: both;
+	}
+	
+.titles{height: 34px;}
+.titles li{
+	text-align: center;
+
+	height: 34px;
+	line-height: 34px;
+	height: 34px;
+	float: left;
+	}
+.checkall{
+	clear: both;
+	width: 64px;
+	text-align: center;
+
+	height: 34px;
+	line-height: 34px;
+}
+
+.goodsdetail{
+	width: 283px;
+
+}
+.money{width: 100px;}
+.count{width: 115px;
+}
+.count span{
+	text-align: center;
+	line-height: 22px;
+	width: 21px; 
+	height: 21px;
+	 display: inline-block;
+	 border: 1px solid #E5E5E5;}
+.weight{width: 75px;}
+.has{width: 137px;}
+.sum{width: 115px;}
+.action{width: 89px}
+
+.goodsnum{
+	margin-top: 15px;
+	border: 1px solid #F5F5F5;}
+
+.goodsnum ul{
+	height: 83px;
+	border-top: 1px solid #F3F3F3;
+}
+
+.goodsnum ul li{
+	float: left;
+	height: 80px;
+	line-height: 83px;
+	}
+.goodsnum ul li dt{
+	height: 22px;
+}
+.goodsnum ul li dd{
+	height: 22px;
+}
+#total{margin-bottom: 20px;}
+#total li{
+	width: 100px;
+	float: right;	
+}
+#total dd{
+	color: red;
+	font-weight: bold;
+}
+
+.sumall li {
+	padding:  0 10px;
+
+}
+.freight span{font-weight: bold;}
+
+.pricesum{
+	font-size: 16px;
+	font-weight: bold;
+	color: #A5A5A5;
+}
+
+
+.pricesum span{
+	font-size: 18px;
+	font-weight: bolder;
+	color:#e71a0f ;
+}
+.backindex,.over{
+	margin-left: 0;
+	line-height: 40px !important; }
+.backindex a,.over a {
+	font-size: 18px;
+	text-align: center;
+	color: #e41c0c;
+	border: 1px solid #e41c0c;
+	background-color: #FFFFFF;
+	display: inline-block;
+	width:135px ;
+	height: 39px;
+	margin: 18px 0 0 0;
+}
+.backindex .on,.over .on{
+	color: #FFFFFF;
+	background-color:#e41c0c;
+}
+.over a {
+	font-size: 18px;
+	text-align: center;
+	color: #e41c0c;
+	border: 1px solid #e41c0c;
+	background-color: #FFFFFF;
+	display: inline-block;
+	width:132px ;
+	height: 39px;
+	margin: 18px 0 0 0;
+	border-bottom: 3px solid #aa0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#botfive{
+	margin-top: 50px;
+	height:220px ;
+	width: 100%;
+	text-align: center;
+}
+#botfive ul{
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	width: 498px;
+}
+#botfive li{
+	
+	text-align: center;
+	border-right:1px solid #000 ;
+	padding: 0 5px;
+}
+
+#botfive p{height: 18px;
+	line-height: 18px;
+	
+}
+.mar10{
+	margin: 10px 0 ;
+}
+
+#botfive .mar20{
+	height: 36px;
+	margin: 20px 0 ;
+}
+
+.clear{
+	clear: both;
+}

@@ -1,0 +1,51 @@
+.myfocus {position: relative;width: 950px;height: 356px;margin:10px 0 10px 156px;}
+    
+.bigpic {height: 320px;}
+    
+.bigpic li {position: absolute;top: 0;left: 0;}
+    
+.smallpic {margin-top: 10px;}
+    
+.smallpic li {display: inline-block;}
+    
+.smallpic img {width: 120px;}
+    
+.navSmall{width: 120px;height: 15px;position: absolute;right: 420px;bottom: 20px;}
+    
+    .navSmall li{
+    	width: 15px;
+		height: 15px;
+		background: #7e7e7e;
+
+		float: left;
+		margin-left: 5px;
+		text-allLign: center;
+		line-height: 15px;
+		cursor: pointer;
+    }
+    
+    .navSmall li.select{
+				background: #000;
+	}
+    
+    .prev,.next {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -40px;
+        padding: 10px;
+        background: rgba(0, 0, 0, .2);
+        font-size: 30px;
+        color: #ccc;
+        text-decoration: none;
+    }
+    
+    .next {
+        left: auto;
+        right: 10px;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, .5);
+    }

@@ -1,6 +1,4 @@
 #bot{
-	clear: both;
-	padding: 1px 0 ;
 	 margin-top: 20px;
 }
 
@@ -13,6 +11,19 @@
 
 
 }
+
+
+#friendlink li{
+	width: 100px;
+	height: 40px;
+	margin:0 16px;
+	text-align: left;
+	line-height: 67px;
+}
+
+
+
+#friendlink li a{color: black;}
 
 
 
@@ -47,13 +58,13 @@
 	margin-top: 28px;
 }
 
-#bot #botfour ul li{
-	
+#botfour li{
+	float: none;
 	color: #5e5e5e;
 	width: 130px;
 	height: 24px;
 	line-height: 24px;
-	float: none;
+	
 }
 
 #botfour .titlefirst{
