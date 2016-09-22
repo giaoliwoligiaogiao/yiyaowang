@@ -42,8 +42,11 @@ i{display: inline-block;}
 	color: #333;
 	font-weight: 400;
 	display: none;
+	z-index: 100;
 	}
-#goodsAddress li{height: 22px;line-height: 22px;}
+#goodsAddress li{
+	float: none;
+	height: 22px;line-height: 22px;}
 #goodsAddress li em{padding: 0 10px 0 0;}
 
 #goodsAddress li a{padding: 0 5px 0 0;}	

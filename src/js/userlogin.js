@@ -1,20 +1,61 @@
-
-			$(function(){
-				// 表单验证插件
-				$("form").validate({
-
-					// 设置验证规则
-					rules:{
-						user:{required:true,rangelength:[3,10]},
-						email:{email:true,required:true},
-						url:{url:true},
-						tel:{number:true}
-					},
-
-					// 设置提示信息
-					messages:{
-						user:{required:'温馨提示：这是一个必填字段'},
-						email:{email:'亲，邮箱地址哦'}
-					}
-				});
-			});
+$(function(){
+	var Telphone,Password;
+	 var $tel=$('#tel');
+	var $password=$('#password');
+		$tel.find('input').on('blur',function(){
+		var tel=$('#tel input').val();
+			var reg=/^1[35678]\d{9}$/;
+			//console.log(reg.test(tel))
+			if(reg.test(tel))
+			{
+				$('#tel h3').hide();
+				Telphone=tel;
+			}
+			else{
+				$('#tel h3').show();
+			}
+			
+			if(tel.length==0)
+			{
+				$(this).next('span').text("不能为空").show();
+			}else{
+				$(this).next('span').hide();
+			}
+		});
+		$password.find('input').on('blur',function(){
+			var mima=$(this).val();
+			var reg=/^\w{6,20}$/;
+			//console.log(reg.test(mima))
+			if(reg.test(mima))
+			{   Password=mima;
+				$('#password .warm').hide();
+				$('#password .suggest').show();
+			}
+			else{
+				$('#password .warm').show();
+				$('#password .suggest').hide();
+			}
+		
+			if(mima.length==0)
+			{
+				$(this).next('span').text("不能为空").show();
+			}else{
+				$(this).next('span').hide();
+			}
+		});
+		
+		$('#midleftbot').on('click','button',function(){
+			//alert(document.cookie);
+			var num=parseInt(getCookie('phone'));
+			var mima=parseInt(getCookie('password'));
+			console.log(num);
+			if(Telphone==num&&Password==mima){
+				
+				alert('登录成功')
+			}else{
+				alert('missing')
+			}
+		})
+		
+		
+});

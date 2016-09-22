@@ -1,4 +1,4 @@
-
+#biggest{width: 1190px}
 #midtopNav{
 	margin: 0 0 15px 0;
 	clear: both;
@@ -317,3 +317,42 @@
 	height: 20px;
 	line-height: 20px;
 	padding: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#APP {position: relative;}
+#APP #app{z-index: 10;
+			position: absolute;
+			top:36px;
+			left: 0;
+			width: 110px;
+			height: 110px;
+			background-color: #FFFFFF;
+		}
+#APP #app li{
+	float: none;
+	margin: 0;padding: 0;}
+
+#APP #apperweima{
+	z-index: 10;
+	background-color: #FFFFFF;
+	width: 85px;height: 85px;
+	background-position: -1px -887px;
+	position: absolute;left: 100px;top: 40px;
+}

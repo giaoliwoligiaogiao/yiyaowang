@@ -23,6 +23,16 @@ i{
 	position: relative;
 	height: 70px;
 }
+#tel span,#password span,#passwordagain span{
+	position: absolute;
+	top: 6px;
+	right:0;
+	
+	height: 30px;
+	line-height: 30px;
+	color: red;
+	
+}
 div h3{
 	height: 30px;
 	line-height: 30px;
@@ -99,7 +109,7 @@ div i{
 .on{
 	background-position:0 -53px ;
 }
-#left #right{
+#left ,#right{
 	height: 538px;
 	position: relative;
 	width: 484px;

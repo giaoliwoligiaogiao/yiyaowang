@@ -1,0 +1,203 @@
+body,html{width: 100%;height: 100%;margin: 0 auto;}
+#biggest{ width:990px;margin:0 auto; font-family: "微软雅黑";font-size: 12px;}
+i{
+	display: inline-block;
+}
+/*左浮动*/
+#imgs,#left,#right,.yanzhegma {float: left;}
+.right{float: right;}
+/*红色字*/
+.suggest{
+	display: inline-block;
+	float: left;
+}
+.warm{
+	display: none;
+	float: left;
+	color: red;}
+                                                             
+#mid{
+	min-height: 580px;
+	border: 1px solid #EEEEEE;
+	border-top: 2px solid blue;
+	padding: 0px 0 0  0px;
+}
+#left{position: relative;
+	width: 340px;
+padding: 20px 0 0 40px;}
+#left h2{
+	font-size: 16px;
+	margin: 0 0 20px 0;
+}
+#left div{
+	position: relative;
+	height: 70px;
+}
+div h3{
+	height: 30px;
+	line-height: 30px;
+	color: #a5a5a5;
+}
+#left>div{
+	clear: both;
+	
+	
+}
+#tel span,#password span,#passwordagain span{
+	position: absolute;
+	top: 6px;
+	right:-40px;
+	
+	height: 30px;
+	line-height: 30px;
+	color: red;
+	
+}
+div input{
+ 	padding:6px 0px 6px 40px ;
+ 	outline: none;
+ 	display: block;
+ 	border: 1px #eee solid;
+ 	font-size: 14px;
+ 	height: 28px;
+ 	width: 300px;
+ }
+div i{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(img/regest.png) no-repeat;
+}
+#tel i{
+	background-position: 8px -112px;
+}
+#passwordagain i,#password i{
+	background-position: 8px -143px;
+}
+
+
+.yanzhegma{
+
+	width: 150px;
+	margin: 0 10px 0 0;
+	padding: 0 9px;
+}
+.random{
+		margin: 0 -5px;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+}
+.randombot{
+		margin: 0 16px;
+	color: blue;
+}
+
+#telmassage button{
+	height: 28px;
+}
+
+#midleftbot{
+	font-size: 13px;
+}
+#midleftbot p{
+	color: #A5A5A5;
+	margin-bottom:10px ;}
+#midleftbot input{
+	float: left;
+	width: 13px;
+	height: 13px;
+	
+}
+#midleftbot button{clear: both;
+	width: 340px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color:dodgerblue ;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+}
+#partner {
+	margin: 12px 0 0 0;
+}
+#partner p{
+
+	height: 39px;
+	
+}
+#partner i{
+	position: relative;
+	width: 39px;
+	height: 39px;
+	margin:18px 18px 0 0;
+	background: url(img/img_zhifu.png)no-repeat 0 0 ;
+}
+.on{
+	background-position:0 -53px ;
+}
+#right{
+	left: 100px;
+	height: 538px;
+	position: relative;
+	width: 484px;
+}
+#right p{
+	padding-top: 20px;
+	float: right;
+}
+#right img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+#botfive{
+	margin-top: 50px;
+	height:220px ;
+	width: 100%;
+	text-align: center;
+}
+#botfive ul{
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	width: 498px;
+}
+#botfive li{
+	
+	text-align: center;
+	border-right:1px solid #000 ;
+	padding: 0 5px;
+}
+
+#botfive p{height: 18px;
+	line-height: 18px;
+	
+}
+.mar10{
+	margin: 10px 0 ;
+}
+
+#botfive .mar20{
+	height: 36px;
+	margin: 20px 0 ;
+}
+
+.clear{
+	clear: both;
+}
+

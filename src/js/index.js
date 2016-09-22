@@ -45,19 +45,73 @@
 			$(this).stop().animate({'top':0});
 		})
 	});
+	/*轮播图*/
+	$('.lunbotu').myFocus({imgs:['../img/lunbotu1.jpg','../img/lunbotu2.jpg','../img/lunbotu3.jpg','../img/lunbotu4.jpg','../img/lunbotu5.jpg']});
+
+		$('#f1 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f2 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f3 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f4 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f5 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f6 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f7 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f8 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
+	$('#f9 .minilubotu').myFocus({imgs:["../img/1473316231580125.jpg","../img/1473828438698207.jpg","../img/1473828851474209.jpg"],width:605}
+	);
 	
+	$('#botsec').on('mouseenter','li',function(){
+		$(this).stop().animate({'top':-15},function(){
+			$(this).stop().animate({'top':0});
+		})
+	});
 		
+	$('#floor').on('mouseenter','li',function(){
+		$(this).find('a').hide().parent().find('span').css('display',"block");
+	}).on('mouseleave',"li",function(){
+		$(this).find('a').css('display',"block").parent().find('span').hide();
+	});
+	var $nav = $('#floor');
+	var $floor = $('#allfloor .floor');
+	$(window).on('scroll',function(){
+		var scrollTop=$(window).scrollTop();
 		
+		if(scrollTop>692)
+		{
+			$('#floor').show()
+			
+			
+		}
+		else{
+			$('#floor').hide();
+		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	});
+
+	$('#floor').on('click','li',function(){
+				var num=$(this).index();
+				console.log($floor.length);
+				if(num==9)
+				{
+					scrollTop =5036;
+				}else
+				{
+				var scrollTop = $floor.eq(num).offset().top - ($(window).height()-$floor.eq(num).outerHeight())-200;
+				}	console.log(scrollTop);
+				$('html,body').animate({scrollTop:scrollTop});
+				
+			});
+
+
+
+			
 		
 		
 	

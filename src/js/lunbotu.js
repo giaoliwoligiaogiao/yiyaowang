@@ -3,21 +3,22 @@
 	$.fn.extend({
 		myFocus:function(opts){
 			var defaults = {
+				width:750,
 				imgs:[],//大图列表
-				btn:true,//是否显示前后按钮
+				btn:false,//是否显示前后按钮
 				smallPic:false,//是否显示小图
 				navSmall:true,//是否显示小导航栏
 				speed:2000,	//切换时间
 				autoplay:true, //自动轮播
-				type:'fade',//left,top
+				type:'left',//left,top
 			};
 			return this.each(function(){
 				var $self = $(this);
 				
 				var opt = $.extend({},defaults,opts);
 
-				var $bigPic,$smallPics;
-
+				var $bigPic,$smallPics,$navSmall;
+					
 				// 默认显示第一张
 				var index = 0;
 
@@ -31,7 +32,9 @@
 					$self.on('mouseenter',function(){
 						clearInterval(timer);
 					}).on('mouseleave',function(){
+						
 						timer = setInterval(function(){
+									
 							index++;
 							showPic();
 						},opt.speed);
@@ -68,13 +71,14 @@
 
 					})*/
 					var lis = $.map(opt.imgs,function(imgsrc){
+						
 						return '<li><img src="' + imgsrc + '"/></li>'
 					});
 					
 					var lins=$.map(opt.imgs,function(imgsrc){
-						return '<li></li>'
+					return '<li></li>'
 					});
-
+					
 					// 生成大图
 					$bigPic.html(lis);
 					$bigPic.appendTo($self)
@@ -90,16 +94,17 @@
 						$navSmall=$('<ul/>').addClass('navSmall').html(lins);
 						$navSmall.appendTo($self);
 					}
-					
+					$('<li><img src="' + opt.imgs[0] + '"/></li>').appendTo($bigPic);
+					//console.log(1)
 					//给按钮绑定点击事件
 	          		if(opt.navSmall){
-	          			$('.navSmall li').each(function(idx){
-			          		$(this).on('click',function(){
-			          			console.log($(this));
-				          		index=idx;
+	          			//.each(function(idx){
+			          		$navSmall.find('li').on('click',function(){
+			          			//console.log($(this));
+				          		index=$(this).index();
 				          		showPic();
 		          			})	          		
-		          		})
+		          		//})
 	          		}
 		          	
 					
@@ -116,13 +121,23 @@
 
 				// 图片显示
 				function showPic(){
-					if(index>=opt.imgs.length){
+					if(index>opt.imgs.length){
 						index = 0;
+						
+						$bigPic.css({'left':0});
 					}else if(index<0){
 						index = opt.imgs.length -1;
 					}
-					$bigPic.find('li').eq(index).animate({opacity:1}).siblings('li').animate({opacity:0});
-					if(opt.navSmall) $('.navSmall li').eq(index).addClass('select').siblings().removeClass('select');
+				//	console.log(index)
+						var count=-index*opt.width
+					$bigPic.animate({left:count}).siblings('li').animate({opacity:0});
+					console.log(index,opt.imgs.length)
+					if(index==opt.imgs.length)
+					{$navSmall.find('li').eq(0).addClass('select').siblings().removeClass();}
+					else 
+					{$navSmall.find('li').eq(index).addClass('select').siblings().removeClass();
+					}console.log($navSmall.find('li').eq(index))
+					
 					if(opt.smallPic) $smallPic.find('li').eq(index).animate({opacity:1}).siblings('li').animate({opacity:0.5});
 				}
 			});

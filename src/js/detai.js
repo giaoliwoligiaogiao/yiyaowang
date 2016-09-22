@@ -34,7 +34,7 @@ $(function(){
 		
 		var x=e.pageX-$(this).offset().left-$span.outerWidth()/2;
 		var y=e.pageY-$(this).offset().top-$span.outerHeight()/2;
-		console.log(y)
+		//console.log(y)
 		if (x<0) {
 			x=0;
 		}

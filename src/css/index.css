@@ -330,22 +330,26 @@ i{display: inline-block;}
 	width: 750px;
 	overflow: hidden;
 }
-#midbox .lunbotu .lunbotupic{
+#midbox .lunbotu .bigpic{
 	position: absolute;
 	
 	
 	width: 4500px;
 	height: 400px;
 }
-
+#midbox .lunbotu .bigpic li{
+	
+	float:left}
 
 
 .lunbotu{position: relative;}
-.yuandian{position: absolute;
+.navSmall{position: absolute;
 	bottom:5% ;
 	left: 38%;
+	width:190px;
 }
-.yuandian li{
+
+.navSmall li{
 	float: left;
 	float: left;
 	width: 16px;
@@ -355,7 +359,7 @@ i{display: inline-block;}
 	background-color: #000000;
 	opacity: 0.5;
 }
-
+.navSmall .select{background-color:red;}
 
 
 
@@ -495,8 +499,29 @@ i{display: inline-block;}
 	overflow: hidden;
 	position: relative;
 }
-.miniyuandian{
-	left: 42%;
+.minilubotu .bigpic{
+	position: absolute;
+	width: 2443px;
+	height: 284px;
+	}
+	
+.minilubotu .navSmall{position: absolute;
+	bottom:5% ;
+	left: 255px;
+	width:190px;
+}
+.minilubotu .navSmall li{
+	
+	float: left;
+	width: 16px;
+	height: 16px;
+	border-radius:8px;
+	margin: 0 10px;
+	background-color: #000000;
+	opacity: 0.5;
+}
+.minilubotu .navSmall .select{
+	background-color: red;
 }
 
 .floorRightButton li{padding-top: 15px;
@@ -579,6 +604,7 @@ i{display: inline-block;}
 	height: 34px;
 }
 #botfir p span{
+	
 	float: left;
 	display: inline-block;
 	width: 178px;
@@ -626,6 +652,7 @@ i{display: inline-block;}
 	margin: 80px 0 50px 0;
 }
 #botsec li{
+	position: relative;
 	margin:50px 0 0  22px;
 	width: 275px;
 	height: 115px;
@@ -719,13 +746,44 @@ i{display: inline-block;}
 	clear: both;
 }
 
+#floor{
+	display: none;
+	position: fixed;
+	top: 300px;
+	left: 0;
+}
+#floor li{
+	border: 1px solid #E5E5E5;
+	width: 50px;
+	height: 42px;
+	line-height: 42px;
+	float: none;
+	text-align:center ;
+}
+#floor span{
+	color: #FFFFFF;
+	background-color: #157CDB;
+	width: 50px;
+	height: 42px;
+	display: none;
+	
+}
 
+#floor a{
+	
+	width: 50px;
+	height: 42px;
+	line-height: 19px;
+	color: #5E5E5E;
+	font-size: 14px;
+	display: inline-block;
+	display: block;
+	
+}
 
-
-
-
-
-
+#floor .font12{display: inline-block;
+	font-size: 12px;
+	line-height: 18px;}
 
 
 

@@ -1,3 +1,4 @@
+#biggest{width: 1190px;}
 i{vertical-align: middle;
 	display: inline-block;}
 .red{color: red;}
@@ -26,6 +27,10 @@ body{color: #5E5E5E;}
 	height: 20px;
 	vertical-align: middle;
 	background: url(img/haitao_ico.gif)no-repeat;
+}
+#APP{position: relative;}
+#app{position: absolute;z-index: 100;float: none;
+	background-color: #FFFFFF;
 }
 .arrowDown{
 	width: 13px;
@@ -93,7 +98,7 @@ body{color: #5E5E5E;}
 	color: #000000;
 }
 .thrmenu{
-	display: none;
+	display: block;
 	clear: both;
 	float: left;
 	width: 252px;

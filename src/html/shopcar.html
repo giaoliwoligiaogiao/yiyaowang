@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="../asset/reset.css" />
 	<link rel="stylesheet" href="../css/reset.css" />
 	<link rel="stylesheet" href="../css/shopcar.css" />
+	<script type="text/javascript" src="../asset/jquery-1.12.0.js" ></script>
+	<script type="text/javascript" src="../asset/mycookie.js" ></script>
+	<script type="text/javascript" src="../js/head.js" ></script>
+	<script type="text/javascript" src="../js/shopcar.js" ></script>
 	<body>
 		<div id="biggest">
 			 <div id="topFirst">
@@ -89,7 +93,8 @@
 				</div>
 				<div class="title ">
 					<ul class="titles bc">
-						<li class="checkall"><input type="checkbox" name="checkall" >全选</li>
+						<li class="checkall">
+							<input type="checkbox" name="checkall" >全选</li>
 						<li class="goodsdetail">商品信息</li>
 						<li class="money">金额</li>
 						<li class="count">数量</li>
@@ -106,41 +111,58 @@
 							</p>
 							</div>
 							<!--商品加入位置-->
-						<ul>
-							<li class="checkall"><input type="checkbox" name="checkall" ></li>
+						<ul class="only">
+							<li class="check"><input type="checkbox" name="check" ></li>
 							<li class="goodsdetail"><img src="../img/50_50.jpg"><span>同仁堂六味地黄丸</span></li>
-							<li class="money">￥<span>15.8</span></li>
-							<li class="count"><span class="minus">-</span><span class="number">150</span><span class="plus">+</span></li>
-							<li class="weight"><span></span>kg</li>
-							<li class="has">有货</li>
-							<li class="sum">￥<span></span></li>
-							<li class="action"><dl>
-								<dt class="select">收藏</dt>
-								<dd class="del">删除</dd>
-							</dl></li>
+							<li class="action" style="float: right;">
+									<dl>
+										<dt class="select">收藏</dt>
+										<dd class="del">删除</dd>
+									</dl>
+							</li>
+							<li class="sum" style="float: right;">￥<span></span></li>
+							<li class="has" style="float: right;">有货</li>
+							<li class="weight" style="float: right;"><span>3</span>kg</li>
+							<li class="count" style="float: right;"><span class="minus">-</span><span class="number">150</span><span class="plus">+</span></li>
+							<li class="money" style="float: right;">￥<span>15.8</span></li>
+						</ul>
+						<ul class="only">
+							<li class="check"><input type="checkbox" name="check" ></li>
+							<li class="goodsdetail"><img src="../img/50_50.jpg"><span>同仁堂六味地黄丸</span></li>
+							<li class="action" style="float: right;">
+									<dl>
+										<dt class="select">收藏</dt>
+										<dd class="del">删除</dd>
+									</dl>
+							</li>
+							<li class="sum" style="float: right;">￥<span></span></li>
+							<li class="has" style="float: right;">有货</li>
+							<li class="weight" style="float: right;"><span>1</span>kg</li>
+							<li class="count" style="float: right;"><span class="minus">-</span><span class="number">150</span><span class="plus">+</span></li>
+						<li class="money" style="float: right;">￥<span>15.8</span></li>
 						</ul>
 						
 						<ul id="total" class="bc">
 							<li>
-								<dl>
-									<dt>商品金额</dt>
-									<dd>￥<span>0.00</span>kg</dd>
+								<dl id="allselect">
+									<dt >商品金额</dt>
+									<dd>￥<span>0.00</span></dd>
 								</dl>
 							</li>
 							
 							<li>
-								<dl>
+								<dl id="allprivilege">
 									<dt>优惠</dt>
 									<dd>￥<span>0.00</span>kg</dd>
 								</dl>
 							</li>
 							<li>
-								<dl>
+								<dl id="alltrans">
 									<dt>运费</dt>
-									<dd>￥<span>0.00</span>kg</dd>
+									<dd>￥<span>0.00</span>kg*5</dd>
 								</dl>
 							<li>
-								<dl>
+								<dl id="allweight">
 									<dt>重量合计</dt>
 									<dd><span>0.00</span>kg</dd>
 								</dl>
