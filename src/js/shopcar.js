@@ -135,9 +135,33 @@ $(function(){
 		
 		if(this.checked)
 		{
-			$('input').prop('checked',true)
+			var money=0;
+			var weight=0;
+			$('input').prop('checked',true);
+			/*金额全选之后*/
+			$('#bigbigbox').find('.sum').each(function(index,item){
+				money+=parseInt($(item).find('span').text());
+			})
+			$('#allselect').find('span').text(money);
+			$('.pricesum').find('span').text(money);
+			
+			
+			$('#bigbigbox').find('.weight').each(function(index,item){
+				weight+=parseInt($(item).find('span').text());
+			})
+			
+			$('#allweight').find('dd span').text(weight);
+			$('.allweight').find('span').text(weight);
+			//console.log(num);
+			//$ul.find('.weight').find('span').text(num);
+			//var trans=parseInt($('#allweight').find('dd span').text())*0.5;
+			
 		}else{
-			$('input').prop('checked',false)
+			$('input').prop('checked',false);
+			$('#allweight').find('dd span').text(0);
+			$('.allweight').find('span').text(0);
+			$('#allselect').find('span').text(0);
+			$('.pricesum').find('span').text(0);
 		}
 	})
 		
