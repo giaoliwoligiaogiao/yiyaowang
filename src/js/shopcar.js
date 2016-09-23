@@ -50,9 +50,10 @@ $(function(){
 	{
 		var num=i+i*10+i*100;
 		var str=getCookie(num);
-		console.log(str);
+		
 		if(str.length!=0)
 		{
+			console.log(str);
 			arr.push(num);
 			
 		}
@@ -88,7 +89,32 @@ $(function(){
 	
 	
 	
-	
+	var str=getCookie('liuweidihuangwan');
+	if(str!=0){
+		var obj=JSON.parse(str);
+		//console.log(getCookie(item1))
+		//{blodred: 15.8, num: 14, imgsrc: "../css/img/pic1.jpg", introduce: "同仁堂  六味地黄丸  120丸"}
+		var sum=num*obj.blodred;
+		var $li1=$('<li class="check"><input type="checkbox" name="check" ></li>');
+		var $li2=$('<li class="goodsdetail"><img src="'+obj.imgsrc+'"><span>'+obj.introduce+'</span></li>');
+		var $li3=$('<li class="action" style="float: right;"><dl><dt class="select">收藏</dt><dd class="del">删除</dd></dl></li>');
+		
+		var $li4=$('<li class="sum" style="float: right;">￥<span>'+sum+'</span></li>');
+		var $li5=$('<li class="has" style="float: right;">有货</li>');
+		var $li6=$('<li class="weight" style="float: right;"><span></span>kg</li>');
+		var $li7=$('<li class="count" style="float: right;"><span class="minus">-</span><span class="number">'+obj.num+'</span><span class="plus">+</span></li>');
+		var $li8=$('<li class="money" style="float: right;">￥<span>'+obj.blodred+'</span></li>');
+		var $ul=$('<ul class="only"/>')
+		$li1.appendTo($ul);
+		$li2.appendTo($ul);
+		$li3.appendTo($ul);
+		$li4.appendTo($ul);
+		$li5.appendTo($ul);
+		$li6.appendTo($ul);
+		$li7.appendTo($ul);
+		$li8.appendTo($ul);
+		$ul.appendTo($('#bigbigbox'));
+	}
 	
 	
 	

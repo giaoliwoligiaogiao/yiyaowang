@@ -57,7 +57,7 @@ $(function(){
 
 		oDate.setDate(oDate.getDate() + 5);
 	
-		document.cookie='liuweidihuangwan='+JSON.stringify(goods)+':path=/'+";expires=" +oDate ;
+		document.cookie='liuweidihuangwan='+JSON.stringify(goods)+';path=/'+";expires=" +oDate ;
 	})	
 	
 
