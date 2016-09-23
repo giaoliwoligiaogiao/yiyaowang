@@ -82,7 +82,7 @@
 	var $floor = $('#allfloor .floor');
 	$(window).on('scroll',function(){
 		var scrollTop=$(window).scrollTop();
-		
+		console.log(scrollTop);
 		if(scrollTop>692)
 		{
 			$('#floor').show()
@@ -92,24 +92,35 @@
 		else{
 			$('#floor').hide();
 		}
-		
+		if(scrollTop<5330){
+			var top=$(window).scrollTop();
+			//console.log(top,$('.floor').eq(0).outerHeight())
+			var num=Math.ceil((top-462)/(30+$('.floor').eq(0).outerHeight()));
+			if(num<10)
+			$('#floor li').eq(num).find('a').hide().parent().siblings().find('a').show();
+			$('#floor li').eq(num).find('span').css('display','block').parent().siblings().find('span').hide()
+			//console.log(num);
+		}else{
+			
+		}
 	});
 
 	$('#floor').on('click','li',function(){
 				var num=$(this).index();
-				console.log($floor.length);
+				//console.log($floor.length);
 				if(num==9)
 				{
-					scrollTop =5036;
+					var scrollTop =5036;
 				}else
 				{
-				var scrollTop = $floor.eq(num).offset().top - ($(window).height()-$floor.eq(num).outerHeight())-200;
-				}	console.log(scrollTop);
+				//var scrollTop = $floor.eq(num).offset().top - ($(window).height()-$floor.eq(num).outerHeight())-600;
+				var scrollTop=489*num+380;
+				}	//console.log(scrollTop);
 				$('html,body').animate({scrollTop:scrollTop});
 				
 			});
 
-
+	
 
 			
 		

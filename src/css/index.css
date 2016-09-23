@@ -768,7 +768,13 @@ i{display: inline-block;}
 	display: none;
 	
 }
-
+#floor em{
+	color: #FFFFFF;
+	background-color: #157CDB;
+	width: 50px;
+	height: 42px;
+	display: block;
+}
 #floor a{
 	
 	width: 50px;

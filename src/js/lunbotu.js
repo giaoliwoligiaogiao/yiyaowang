@@ -131,12 +131,12 @@
 				//	console.log(index)
 						var count=-index*opt.width
 					$bigPic.animate({left:count}).siblings('li').animate({opacity:0});
-					console.log(index,opt.imgs.length)
+					//console.log(index,opt.imgs.length)
 					if(index==opt.imgs.length)
 					{$navSmall.find('li').eq(0).addClass('select').siblings().removeClass();}
 					else 
 					{$navSmall.find('li').eq(index).addClass('select').siblings().removeClass();
-					}console.log($navSmall.find('li').eq(index))
+					}//console.log($navSmall.find('li').eq(index))
 					
 					if(opt.smallPic) $smallPic.find('li').eq(index).animate({opacity:1}).siblings('li').animate({opacity:0.5});
 				}

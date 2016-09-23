@@ -86,7 +86,7 @@ $(function(){
 				})
 			}
 		})
-		if($(window).scrollTop()>1000&&$(window).scrollTop()<5000)
+		if($(window).scrollTop()>1000&&$(window).scrollTop()<3000)
 		{ 
 			$.ajax();
 			
