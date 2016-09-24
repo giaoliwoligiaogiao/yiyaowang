@@ -184,8 +184,22 @@ $(function(){
 		$ul.find('.sum').find('span').text(price);
 		
 	});
-	
+	function removeCookie(name)
+		{
+			addCookie(name, 1, -1);
+		}
+		function addCookie(name, val, day)
+			{
+				var oDate = new Date();
+
+				oDate.setDate(oDate.getDate() + day);
+				
+				document.cookie = ""+name+"="+val+';path=/'+";expires=" + oDate;
+			}
 	$('#bigbigbox').on('click','dd',function(){
+		/*删除cookie*/
+		var name=$(this).parent().parent().parent().find('.money span').text();
+		removeCookie(name,1,-1);
 		$(this).parent().parent().parent().remove();
 	});
 	$('#bigbigbox').on('click.wan','input',function(){

@@ -35,7 +35,21 @@ $(function(){
 		$('.fourbox').children('div').eq(index).show().siblings('div').hide();
 	})
 	
-	
+	$(window).on('scroll',function(){
+		var top=$(window).scrollTop()-1167;
+		if($(window).scrollTop()>=1167){
+			$('#goodsdetails').css({
+				'position':'absolute',
+				'top':top,
+				'z-index':100
+			})
+		}else{
+			$('#goodsdetails').css({
+				'position':'relative',
+				
+			})
+		}
+	})
 	
 	
 	

@@ -106,7 +106,7 @@ div i{
 	margin:18px 18px 0 0;
 	background: url(img/img_zhifu.png)no-repeat 0 0 ;
 }
-.on{
+#left  #partner .on{
 	background-position:0 -53px ;
 }
 #left ,#right{

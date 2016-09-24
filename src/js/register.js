@@ -90,7 +90,11 @@ $(function(){
 					addCookie('password',Password,14)
 			})
 			
-			
+			$('#partner').on('mouseover','i',function(){
+				$(this).addClass('on').siblings('i').removeClass('on');
+			}).on('mouseleave',function(){
+				$(this).find('i').removeClass('on');
+			})
 			
 			
 			
